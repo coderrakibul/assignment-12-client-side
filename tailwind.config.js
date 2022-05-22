@@ -8,9 +8,9 @@ module.exports = {
       {
         partstheme: {
           primary: "#0FCFEC",
-          secondary: "#28FB89",
+          secondary: "#103E3C",
           accent: "#3A4256",
-          neutral: "#3d4451",
+          neutral: "#EEF5F9",
           "base-100": "#ffffff",
         },
       },
