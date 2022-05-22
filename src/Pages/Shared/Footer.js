@@ -27,7 +27,7 @@ const Footer = () => {
                 <a class="link link-hover">Cookie policy</a>
             </div>
            </div>
-           <div>
+           <div className='py-8'>
            <p>Copyright © {year} - All right reserved</p>
            </div>
 
