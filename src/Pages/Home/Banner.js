@@ -1,5 +1,6 @@
 import React from 'react';
 import bannerImage from '../../images/banner.png';
+import Loading from '../Shared/Loading';
 
 const Banner = () => {
     return (
