@@ -7,7 +7,7 @@ const Summary = () => {
             <h2 className='text-3xl font-bold text-center mb-8'>Our Business Summary</h2>
             <div className='grid sm:grid-cols-1 lg:grid-cols-3 gap-10'>
                    
-                    <div class="card bg-pink-100 shadow-xl">
+                    <div class="card bg-pink-100 shadow-xl rounded-full">
                         <div class="card-body text-center">
                             <div class="card-actions justify-end">
                             </div>
@@ -17,7 +17,7 @@ const Summary = () => {
                         </div>
                     </div>
 
-                    <div class="card bg-pink-100 shadow-xl">
+                    <div class="card bg-pink-100 shadow-xl rounded-full">
                         <div class="card-body text-center">
                             <div class="card-actions justify-end">
                             </div>
@@ -27,7 +27,7 @@ const Summary = () => {
                         </div>
                     </div>
 
-                    <div class="card bg-pink-100 shadow-xl">
+                    <div class="card bg-pink-100 shadow-xl rounded-full">
                         <div class="card-body text-center">
                             <div class="card-actions justify-end">
                             </div>
