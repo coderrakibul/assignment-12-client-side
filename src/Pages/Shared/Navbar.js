@@ -36,7 +36,9 @@ const Navbar = () => {
                 </ul>
             </div>
             <div class="navbar-end">
-                <div>{user ? <button className='btn btn-ghost' onClick={logout} >Sign Out</button> : <Link to="/login" className='btn btn-ghost'>Login</Link>}</div>
+                <div>{user ?
+                    <button className='btn btn-ghost' onClick={logout} >Sign Out</button> : <Link to="/login" className='btn btn-ghost'>Login</Link>}
+                </div>
             </div>
         </div>
     );
