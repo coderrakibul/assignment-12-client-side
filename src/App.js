@@ -9,6 +9,10 @@ import Login from './Pages/Login/Login';
 import SignUp from './Pages/Login/SignUp';
 import RequireAuth from './Pages/Login/RequireAuth';
 import NotFound from './Pages/NotFound/NotFound';
+import Dashboard from './Pages/Dashboard/Dashboard';
+import MyOrders from './Pages/Dashboard/MyOrders';
+import AddReview from './Pages/Dashboard/AddReview';
+import MyProfile from './Pages/Dashboard/MyProfile';
 
 
 function App() {
@@ -19,6 +23,11 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/purchase' element={<RequireAuth><Purchase></Purchase></RequireAuth>}></Route>
+        <Route path='/dashboard' element={<RequireAuth><Dashboard></Dashboard></RequireAuth>}>
+          <Route index element={<MyOrders></MyOrders>}></Route>
+          <Route path="addreview" element={<AddReview></AddReview>}></Route>
+          <Route path="myprofile" element={<MyProfile></MyProfile>}></Route>
+        </Route>
         <Route path='/reviews' element={<Reviews></Reviews>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>

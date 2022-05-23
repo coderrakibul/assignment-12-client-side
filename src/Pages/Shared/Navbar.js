@@ -22,6 +22,9 @@ const Navbar = () => {
                         <li><Link to='/home'>Home</Link></li>
                         <li><Link to='/purchase'>Purchase</Link></li>
                         <li><Link to='/reviews'>Reviews</Link></li>
+                        {
+                            user && <li><Link to='/dashboard'>Dashboard</Link></li>
+                        }
 
                     </ul>
                 </div>
@@ -32,12 +35,18 @@ const Navbar = () => {
                     <li><Link to='/home'>Home</Link></li>
                     <li><Link to='/purchase'>Purchase</Link></li>
                     <li><Link to='/reviews'>Reviews</Link></li>
+                    {
+                        user && <li><Link to='/dashboard'>Dashboard</Link></li>
+                    }
 
                 </ul>
             </div>
             <div class="navbar-end">
-                <div>{user ?
-                    <button className='btn btn-ghost' onClick={logout} >Sign Out</button> : <Link to="/login" className='btn btn-ghost'>Login</Link>}
+                <div>
+                    {
+                        user ? <button className='btn btn-ghost' onClick={logout} >Sign Out</button>
+                            : <Link to="/login" className='btn btn-ghost'>Login</Link>
+                    }
                 </div>
             </div>
         </div>
