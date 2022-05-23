@@ -1,9 +1,10 @@
 import React from 'react';
+import Products from './Products';
 
 const Purchase = () => {
     return (
         <div>
-            <h2>this is purchase page</h2>
+            <Products></Products>
         </div>
     );
 };

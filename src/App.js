@@ -8,6 +8,7 @@ import Navbar from './Pages/Shared/Navbar';
 import Login from './Pages/Login/Login';
 import SignUp from './Pages/Login/SignUp';
 import RequireAuth from './Pages/Login/RequireAuth';
+import NotFound from './Pages/NotFound/NotFound';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path='/reviews' element={<Reviews></Reviews>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

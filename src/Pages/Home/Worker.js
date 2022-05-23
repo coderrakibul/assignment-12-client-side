@@ -10,7 +10,7 @@ const Worker = ({ worker }) => {
             </div>
         </div>
         <div>
-            <h3 className='flex justify-center mt-6 text-2xl font-bold'>{name}</h3>
+            <h3 className='flex justify-center mt-6 text-xl font-bold'>{name}</h3>
         </div>
         </div>
     );
