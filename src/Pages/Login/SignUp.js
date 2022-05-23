@@ -4,6 +4,7 @@ import auth from '../../firebase.init';
 import { useForm } from "react-hook-form";
 import Loading from '../Shared/Loading';
 import { Link, useNavigate } from 'react-router-dom';
+import google from '../../images/google.svg';
 
 const SignUp = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -116,14 +117,15 @@ const SignUp = () => {
                         </div>
 
                         {signInError}
-                        <input className='btn w-full max-w-xs text-white' type="submit" value="Sign Up" />
+                        <input className='btn btn-outline w-full max-w-xs text-white bg-blue-500' type="submit" value="Sign Up" />
                     </form>
-                    <p><small>Already have an account? <Link className='text-primary' to="/login">Please login</Link></small></p>
+                    <p><small>Already have an account? <Link className='text-primary font-bold' to="/login">Please login</Link></small></p>
                     <div className="divider">OR</div>
+
                     <button
                         onClick={() => signInWithGoogle()}
-                        className="btn btn-outline"
-                    >Continue with Google</button>
+                        className="btn btn-outline">
+                        <img className='w-6 mr-2' src={google} alt="googleImage"/> Continue with Google</button>
                 </div>
             </div>
         </div >

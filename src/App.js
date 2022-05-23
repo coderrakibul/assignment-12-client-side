@@ -12,7 +12,7 @@ import RequireAuth from './Pages/Login/RequireAuth';
 
 function App() {
   return (
-    <div className='bg-neutral'>
+    <div className='bg-gray-100'>
       <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
