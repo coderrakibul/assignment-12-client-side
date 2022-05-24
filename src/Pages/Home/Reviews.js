@@ -10,12 +10,14 @@ const Reviews = () => {
             .then(data => setReviews(data))
     }, []);
 
+    const lastThree = reviews.slice(-3);
+
     return (
         <div className='px-12 mt-24'>
             <h2 className='text-3xl font-bold text-center mb-8'>Our Customers Review</h2>
             <div className='grid grid-cols-1 gap-10'>
                 {
-                    reviews.map(review => <Review
+                    lastThree.map(review => <Review
                         key={review._id}
                         review={review}
                     ></Review>)
