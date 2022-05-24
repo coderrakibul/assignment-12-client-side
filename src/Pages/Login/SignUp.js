@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import Loading from '../Shared/Loading';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import google from '../../images/google.svg';
+import useToken from '../../hooks/useToken';
 
 const SignUp = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -18,6 +19,7 @@ const SignUp = () => {
 
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
+    const [token] = useToken(user || gUser)
 
 
     const navigate = useNavigate();
@@ -41,8 +43,8 @@ const SignUp = () => {
         signInError = <p className='text-red-500'><small>{error?.message || gError?.message || updateError?.message}</small></p>
     }
 
-    if (user || gUser) {
-        navigate('/purchase');
+    if (token) {
+        navigate(from, { replace: true });
     }
 
     const onSubmit = async data => {
