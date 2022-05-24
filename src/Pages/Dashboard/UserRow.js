@@ -9,8 +9,10 @@ const UserRow = ({ user, index, refetch }) => {
         })
             .then(res => res.json())
             .then(data => {
-                refetch();
-                toast.success(`Successfully Made An Admin`);
+                if (data.modifiedCount === 1) {
+                    refetch();
+                    toast.success(`Successfully Made An Admin`);
+                }
             });
     }
     return (
