@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { useForm } from "react-hook-form";
 import Loading from '../Shared/Loading';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import google from '../../images/google.svg';
 
 const SignUp = () => {
@@ -21,6 +21,15 @@ const SignUp = () => {
 
 
     const navigate = useNavigate();
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/";
+
+    useEffect(() => {
+        if (user || gUser) {
+            navigate(from, { replace: true });
+        }
+    }, [user, gUser, from, navigate])
+
 
     let signInError;
 
@@ -125,7 +134,7 @@ const SignUp = () => {
                     <button
                         onClick={() => signInWithGoogle()}
                         className="btn btn-outline">
-                        <img className='w-6 mr-2' src={google} alt="googleImage"/> Continue with Google</button>
+                        <img className='w-6 mr-2' src={google} alt="googleImage" /> Continue with Google</button>
                 </div>
             </div>
         </div >
