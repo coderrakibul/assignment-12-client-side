@@ -31,7 +31,7 @@ const AddReview = () => {
             <form className='flex flex-col' onSubmit={handleSubmit(onSubmit)}>
 
                 <textarea className='w-full p-2' placeholder='give a review' {...register("review")} />
-                <input disabled className='text-xl my-4 text-center' value={email} {...register("email")} />
+                <input readOnly className='text-xl my-4 py-4 text-center' value={email} {...register("email")} />
 
                 <input className='btn btn-primary fw-bold fs-5 mb-2 py-2' type="submit" />
 
