@@ -23,6 +23,7 @@ const Navbar = () => {
                         <li><Link to='/home'>Home</Link></li>
                         <li><Link to='/purchase'>Purchase</Link></li>
                         <li><Link to='/reviews'>Reviews</Link></li>
+                        <li><Link to='/myportfolio'>My Portfolio</Link></li>
                         {
                             user && <li><Link to='/dashboard'>Dashboard</Link></li>
                         }
@@ -37,6 +38,7 @@ const Navbar = () => {
                     <li><Link to='/home'>Home</Link></li>
                     <li><Link to='/purchase'>Purchase</Link></li>
                     <li><Link to='/reviews'>Reviews</Link></li>
+                    <li><Link to='/myportfolio'>My Portfolio</Link></li>
                     {
                         user && <li><Link to='/dashboard'>Dashboard</Link></li>
                     }
