@@ -16,20 +16,20 @@ const Details = () => {
 
 
     return (
-        <div className='px-12 mt-8'>
+        <div className='px-12 mt-8 mb-8'>
             <h2 className='text-3xl font-bold text-center mb-8'>Details of the Product</h2>
             <div>
                 {
                     <div>
                         
                         <div className='flex justify-center'><img src={product.image} alt="" /></div>
-                        <h2 className='text-3xl text-accent'>Product Name: {product.name}</h2>
-                        <h2 className='text-2xl text-accent'>Product Id: {product._id}</h2>
-                        <p>{product.description}</p>
+                        <h2 className='text-3xl'>Product Name: {product.name}</h2>
+                        <h3 className='text-xl font-bold'>Product Id: <span className='text-purple-600'>{product._id}</span></h3>
+                        <p>Description: {product.description}</p>
                         
-                        <h2 className='text-2xl text-accent'>Available Product: {product.quantity}pcs</h2>
-                        <h2 className='text-2xl text-accent'>Minimum Order: {product.order_quantity}pcs</h2>
-                        <h2 className='text-2xl text-accent'>Price: ${product.price}</h2>
+                        <h3 className='text-xl'>Available Product: {product.quantity}pcs</h3>
+                        <h3 className='text-xl'>Minimum Order: {product.order_quantity}pcs</h3>
+                        <h3 className='text-xl font-bold'>Price: ${product.price}</h3>
                         
                     </div>
                 }

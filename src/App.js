@@ -29,7 +29,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/purchase' element={<RequireAuth><Purchase></Purchase></RequireAuth>}></Route>
-        <Route path='/product/:productId' element={<Details></Details>}></Route>
+        <Route path='/purchase/:productId' element={<Details></Details>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/dashboard' element={<RequireAuth><Dashboard></Dashboard></RequireAuth>}>
           <Route index element={<MyOrders></MyOrders>}></Route>

@@ -2,12 +2,9 @@ import React, { useEffect, useState } from 'react';
 import Loading from '../Shared/Loading';
 import Product from './Product';
 
-
 const Products = () => {
 
     const [products, setProducts, isLoading] = useState([]);
-
-
 
     useEffect(() => {
         fetch("http://localhost:5000/part")

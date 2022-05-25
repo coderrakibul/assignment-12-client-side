@@ -2,15 +2,11 @@ import { useNavigate } from 'react-router-dom';
 
 const Product = ({ product, index }) => {
     const { _id, name, order_quantity, image, quantity, price } = product;
-
-
     const navigate = useNavigate();
 
     const navigateToProductDetails = id => {
-        navigate(`/product/${id}`);
+        navigate(`/purchase/${id}`);
     };
-
-
 
     return (
 
