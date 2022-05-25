@@ -18,6 +18,7 @@ import Users from './Pages/Dashboard/Users';
 import RequireAdmin from './Pages/Login/RequireAdmin';
 import Details from './Pages/Purchase/Details';
 import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
+import AddProduct from './Pages/AddProduct/AddProduct';
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         </Route>
         <Route path='/reviews' element={<Reviews></Reviews>}></Route>
         <Route path='/myportfolio' element={<MyPortfolio></MyPortfolio>}></Route>
+        <Route path='/addproduct' element={<AddProduct></AddProduct>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>

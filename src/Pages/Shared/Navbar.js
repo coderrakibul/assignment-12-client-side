@@ -3,9 +3,11 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
+import useAdmin from '../../hooks/useAdmin';
 
 const Navbar = () => {
     const [user] = useAuthState(auth);
+    const [admin] = useAdmin(user)
 
     const logout = () => {
         signOut(auth);
@@ -24,6 +26,7 @@ const Navbar = () => {
                         <li><Link to='/purchase'>Purchase</Link></li>
                         <li><Link to='/reviews'>Reviews</Link></li>
                         <li><Link to='/myportfolio'>My Portfolio</Link></li>
+                        <li><Link to='/addproduct'>Add Product</Link></li>
                         {
                             user && <li><Link to='/dashboard'>Dashboard</Link></li>
                         }
@@ -39,6 +42,7 @@ const Navbar = () => {
                     <li><Link to='/purchase'>Purchase</Link></li>
                     <li><Link to='/reviews'>Reviews</Link></li>
                     <li><Link to='/myportfolio'>My Portfolio</Link></li>
+                    <li><Link to='/addproduct'>Add Product</Link></li>
                     {
                         user && <li><Link to='/dashboard'>Dashboard</Link></li>
                     }
