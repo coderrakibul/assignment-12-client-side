@@ -16,6 +16,9 @@ import MyProfile from './Pages/Dashboard/MyProfile';
 import Blogs from './Pages/Blogs/Blogs';
 import Users from './Pages/Dashboard/Users';
 import RequireAdmin from './Pages/Login/RequireAdmin';
+import Product from './Pages/Purchase/Product';
+import Products from './Pages/Purchase/Products';
+import Details from './Pages/Purchase/Details';
 
 
 function App() {
@@ -26,6 +29,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/purchase' element={<RequireAuth><Purchase></Purchase></RequireAuth>}></Route>
+        <Route path='/product/:productId' element={<Details></Details>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/dashboard' element={<RequireAuth><Dashboard></Dashboard></RequireAuth>}>
           <Route index element={<MyOrders></MyOrders>}></Route>
