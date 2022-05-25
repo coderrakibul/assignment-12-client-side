@@ -19,6 +19,7 @@ import RequireAdmin from './Pages/Login/RequireAdmin';
 import Details from './Pages/Purchase/Details';
 import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
 import AddProduct from './Pages/AddProduct/AddProduct';
+import Delete from './Pages/Purchase/Delete';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/purchase' element={<RequireAuth><Purchase></Purchase></RequireAuth>}></Route>
         <Route path='/purchase/details/:productId' element={<RequireAuth><Details></Details></RequireAuth>}></Route>
+        <Route path='/purchase/delete/:productId' element={<RequireAuth><Delete></Delete></RequireAuth>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/dashboard' element={<RequireAuth><Dashboard></Dashboard></RequireAuth>}>
           <Route index element={<MyOrders></MyOrders>}></Route>
