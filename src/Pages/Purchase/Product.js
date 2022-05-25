@@ -5,7 +5,7 @@ const Product = ({ product, index }) => {
     const navigate = useNavigate();
 
     const navigateToProductDetails = id => {
-        navigate(`/purchase/${id}`);
+        navigate(`/purchase/details/${id}`);
     };
 
     return (
