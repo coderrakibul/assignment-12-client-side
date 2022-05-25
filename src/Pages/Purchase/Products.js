@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import Loading from '../Shared/Loading';
 import Product from './Product';
 
 
 const Products = () => {
 
-    const [products, setProducts] = useState([]);
+    const [products, setProducts, isLoading] = useState([]);
+
+
 
     useEffect(() => {
         fetch("http://localhost:5000/part")
@@ -12,9 +15,12 @@ const Products = () => {
             .then(data => setProducts(data))
     }, []);
 
+    if (isLoading) {
+        return <Loading></Loading>
+    }
+
+
     return (
-
-
 
         <div>
             <h2 className="text-3xl font-bold text-center mb-8 mt-8">All Products: {products.length}</h2>
@@ -30,6 +36,7 @@ const Products = () => {
                             <th>Min Order</th>
                             <th>Order</th>
                             <th>Update</th>
+                            <th>Details</th>
                             <th>Delete</th>
 
                         </tr>
