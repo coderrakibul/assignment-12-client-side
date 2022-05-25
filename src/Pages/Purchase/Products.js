@@ -31,9 +31,9 @@ const Products = () => {
                             <th>Price</th>
                             <th>Avaiable</th>
                             <th>Min Order</th>
-                            <th>Order</th>
-                            <th>Update</th>
                             <th>Details</th>
+                            <th>Update</th>
+                            <th>Order</th>
                             <th>Delete</th>
 
                         </tr>
