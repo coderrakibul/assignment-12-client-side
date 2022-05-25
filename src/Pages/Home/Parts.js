@@ -10,7 +10,7 @@ const Parts = () => {
 
 
     useEffect(() => {
-        fetch("https://fast-retreat-82221.herokuapp.com/part")
+        fetch("http://localhost:5000/part")
             .then(res => res.json())
             .then(data => setParts(data))
     }, []);
