@@ -13,10 +13,6 @@ const Product = ({ product, index }) => {
         navigate(`/purchase/delete/${id}`);
     };
 
-    const navigateToMyOrders = id => {
-        navigate(`/dashboard/myorders/${id}`);
-    };
-
     return (
 
         <tr>
@@ -28,7 +24,7 @@ const Product = ({ product, index }) => {
             <td>{order_quantity}pcs</td>
             <td><button onClick={() => navigateToProductDetails(_id)} class="btn bg-blue-500">Details</button></td>
             <td><button class="btn btn-success">Update</button></td>
-            <td><button onClick={() => navigateToMyOrders(_id)} class="btn btn-primary">Order</button></td>
+            <td><button class="btn btn-primary">Order</button></td>
             <td><button onClick={() => navigateToDelete(_id)} class="btn btn-circle text-red-500">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M6 18L18 6M6 6l12 12" /></svg>
             </button></td>
