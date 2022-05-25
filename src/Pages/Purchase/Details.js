@@ -8,7 +8,7 @@ const Details = () => {
     const [product, setProduct] = useState({});
 
     useEffect(() => {
-        const url = `http://localhost:5000/part/${productId}`;
+        const url = `https://fast-retreat-82221.herokuapp.com/part/${productId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data));
@@ -21,16 +21,16 @@ const Details = () => {
             <div>
                 {
                     <div>
-                        
+
                         <div className='flex justify-center'><img src={product.image} alt="" /></div>
                         <h2 className='text-3xl'>Product Name: {product.name}</h2>
                         <h3 className='text-xl font-bold'>Product Id: <span className='text-purple-600'>{product._id}</span></h3>
                         <p>Description: {product.description}</p>
-                        
+
                         <h3 className='text-xl'>Available Product: {product.quantity}pcs</h3>
                         <h3 className='text-xl'>Minimum Order: {product.order_quantity}pcs</h3>
                         <h3 className='text-xl font-bold'>Price: ${product.price}</h3>
-                        
+
                     </div>
                 }
             </div>

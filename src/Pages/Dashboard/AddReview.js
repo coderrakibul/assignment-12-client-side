@@ -10,7 +10,7 @@ const AddReview = () => {
 
     const onSubmit = data => {
 
-        const url = "http://localhost:5000/review";
+        const url = "https://fast-retreat-82221.herokuapp.com/review";
         fetch(url, {
             method: 'POST',
             headers: {

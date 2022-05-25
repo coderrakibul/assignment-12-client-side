@@ -88,7 +88,7 @@ const MyPortfolio = () => {
 
                 <h2 className='text-xl mt-6'>Link of my project</h2>
                 <div className='flex flex-col text-center text-blue-700'>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">Enter a link</a>
+                    <a href="https://parts-car-11705.web.app/" target="_blank" rel="noopener noreferrer">https://parts-car-11705.web.app/</a>
                     <a href="https://warehouse-84aea.web.app/home" target="_blank">https://warehouse-84aea.web.app/home</a>
 
                     <a href="https://doctors-portal-d95b1.web.app/" target="_blank">https://doctors-portal-d95b1.web.app/</a>
