@@ -1,10 +1,16 @@
-# Getting Started with Create React App
+# Car Parts Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Car Parts [click here to visit](https://parts-car-11705.web.app/).
 
-## Available Scripts
+## About this website
+This is a website of car parts. Many parts stored here. We sell these over all country. You can contact us to order many product.
 
-In the project directory, you can run:
+## Website features
+* Protected page for authorized users
+* Authentication system
+* Admin and User different facilities
+* Responsive design
+* Only admin can add products
 
 ### `npm start`
 
