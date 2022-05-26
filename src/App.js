@@ -20,6 +20,7 @@ import Details from './Pages/Purchase/Details';
 import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
 import AddProduct from './Pages/AddProduct/AddProduct';
 import Delete from './Pages/Purchase/Delete';
+import Orders from './Pages/Purchase/Orders';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/purchase' element={<RequireAuth><Purchase></Purchase></RequireAuth>}></Route>
         <Route path='/purchase/details/:productId' element={<RequireAuth><Details></Details></RequireAuth>}></Route>
+        <Route path='/purchase/orders/:productId' element={<RequireAuth><Orders></Orders></RequireAuth>}></Route>
         <Route path='/purchase/delete/:productId' element={<RequireAuth><Delete></Delete></RequireAuth>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/dashboard' element={<RequireAuth><Dashboard></Dashboard></RequireAuth>}>
