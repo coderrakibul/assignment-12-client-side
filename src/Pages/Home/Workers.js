@@ -16,7 +16,7 @@ const Workers = () => {
         },
 
         {
-            id:3,
+            id: 3,
             name: "Curly",
             image: "https://i.ibb.co/f1m5JqV/depositphotos-88370532-stock-photo-mechanic-holding-a-wrench.webp"
         }
@@ -28,8 +28,8 @@ const Workers = () => {
             <div className='grid sm:grid-cols-1 lg:grid-cols-3 gap-10'>
                 {
                     workers.map(worker => <Worker
-                    key={worker.id}
-                    worker={worker}
+                        key={worker.id}
+                        worker={worker}
                     ></Worker>)
                 }
             </div>

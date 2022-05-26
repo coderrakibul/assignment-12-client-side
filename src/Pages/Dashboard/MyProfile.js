@@ -10,12 +10,12 @@ const MyProfile = () => {
         <div>
             <h2>My Profile</h2>
             <div className='text-center'>
-            {
-                user && <>
-                    <h2 className='text-2xl'>{user.displayName}</h2>
-                    <h3 className='text-xl'>{user.email}</h3>
-                </>
-            }
+                {
+                    user && <>
+                        <h2 className='text-2xl'>{user.displayName}</h2>
+                        <h3 className='text-xl'>{user.email}</h3>
+                    </>
+                }
             </div>
         </div>
     );

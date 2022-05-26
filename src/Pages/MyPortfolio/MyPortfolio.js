@@ -8,8 +8,8 @@ const MyPortfolio = () => {
                 <h2 className='text-center text-2xl'>Name: Md Rakibul Islam</h2>
                 <h2 className='text-center text-2xl'>Email: coder.rakibul@gmail.com</h2>
                 <h2 className='text-xl'>Educational Qualificatons:
-                    <div class="overflow-x-auto">
-                        <table class="table w-full">
+                    <div className="overflow-x-auto">
+                        <table className="table w-full">
                             <thead>
                                 <tr>
                                     <th>Exam Name</th>
@@ -41,8 +41,8 @@ const MyPortfolio = () => {
                 </h2>
 
                 <h2 className='text-xl mt-6'> Present:
-                    <div class="overflow-x-auto">
-                        <table class="table w-full">
+                    <div className="overflow-x-auto">
+                        <table className="table w-full">
                             <thead>
                                 <tr>
                                     <th>Now Studing</th>
@@ -68,8 +68,8 @@ const MyPortfolio = () => {
 
 
                 <h2 className='text-xl mt-6'>Skills:
-                    <div class="overflow-x-auto">
-                        <table class="table w-full">
+                    <div className="overflow-x-auto">
+                        <table className="table w-full">
                             <thead>
                                 <tr>
                                     <th className='text-center'>Skills or Technologies</th>
