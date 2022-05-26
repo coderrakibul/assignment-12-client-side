@@ -5,7 +5,7 @@ const AddProduct = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/part`;
+        const url = `https://fast-retreat-82221.herokuapp.com/part`;
         fetch(url, {
             method: 'POST',
             headers: {

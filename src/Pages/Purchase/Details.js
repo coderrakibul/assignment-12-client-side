@@ -8,7 +8,7 @@ const Details = () => {
     const [product, setProduct] = useState({});
 
     useEffect(() => {
-        const url = `http://localhost:5000/part/${productId}`;
+        const url = `https://fast-retreat-82221.herokuapp.com/part/${productId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data));
