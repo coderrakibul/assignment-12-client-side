@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const Delete = () => {
     const { productId } = useParams();
@@ -41,6 +41,7 @@ const Delete = () => {
                             <th>Image</th>
                             <th>Id</th>
                             <th>Action</th>
+                            <th>Return</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -52,6 +53,7 @@ const Delete = () => {
                             <td><button onClick={() => handleDelete(product._id)} className="btn btn-circle text-red-500">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" d="M6 18L18 6M6 6l12 12" /></svg>
                             </button></td>
+                            <td><Link to="/purchase" className="btn btn-success">Go Back</Link></td>
                         </tr>
 
                     </tbody>
