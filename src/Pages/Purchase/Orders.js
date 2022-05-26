@@ -6,7 +6,6 @@ import auth from '../../firebase.init';
 
 const Orders = () => {
     const [product, setProduct] = useState({});
-    const { name, quantity, order_quantity } = product
     const { productId } = useParams();
     const [user] = useAuthState(auth);
     const email = user.email;
